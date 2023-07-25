@@ -17,6 +17,26 @@ ul {
 
 
 }
+#recent-searches {
+    flex-direction: column;
+    color:#fff;
+}
+#recent-searches li {
+    text-align: center;
+    font-size: larger;
+
+}
+#recent-searches button {
+    background-color: rgb(53, 52, 52);;
+    color:#fff;
+    border:none;
+    font-size: larger;
+    width:100%;
+    cursor: pointer;
+}
+#recent-searches button:hover {
+opacity: .7;
+}
 h1 {
     text-align: center;
     color:white;
@@ -33,7 +53,7 @@ h1 {
     height: 40px;
     
 }
-#search-btn {
+#searchbtn {
     width:100%;
     height: 40px;
     cursor:pointer;
@@ -42,9 +62,11 @@ h1 {
     background-color:  rgb(53, 52, 52);
     font-size:larger;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .weather-data {
     border: solid  1px  rgb(53, 52, 52);
     width:70%;
     margin:10px 11px 10px;
+    height:200px
 }
