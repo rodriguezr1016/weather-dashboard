@@ -7,8 +7,9 @@
 main {
     display: flex;
     flex-direction:row-reverse;
+    flex-wrap: wrap;
 }
-ul {
+.weather-cards {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -44,7 +45,7 @@ h1 {
     padding: 18px 0;
 }
 .container {
-    width:30%;
+    width:28%;
     padding-left: 10px;
     padding-top: 10px;
 }
@@ -69,4 +70,19 @@ h1 {
     width:70%;
     margin:10px 11px 10px;
     height:200px
+}
+.weather-cards{
+    width:99%;
+    /* margin: 10px; */
+}
+
+.weather-cards li {
+    margin: 10px;
+    color:white;
+    /* background-color: rgb(53, 52, 52); */
+    border-radius: 10px;
+    width: 153px;
+    height: 250px;
+    text-align: center;
+    padding-top: 10px;
 }
