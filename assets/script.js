@@ -26,7 +26,7 @@ var createWeatherCard= (inputValue, weatherCard, index) => {
         //I want to add the previous searches to a list
         var searchbtnEl= document.querySelector("#searchbtn");
         var gettingWeatherDetails = function(inputValue,lat, lon,){
-            var weatherAPIURL= `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&list.temp=impperial&appid=${APIKey}`;
+            var weatherAPIURL= `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&list.temp=impperial&appid=${APIKey}`;
             fetch(weatherAPIURL)
             .then(function (response) {
                 return response.json();
@@ -98,7 +98,7 @@ function createlist(){
 //getting coordinates
 var gettingCoordinates = function(city){
     var cityName = localStorage.getItem("city-name");
-    var geocodingAPIURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${APIKey}`
+    var geocodingAPIURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${APIKey}`
     fetch(geocodingAPIURL)
     .then(function (response) {
         return response.json();
