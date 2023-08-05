@@ -1,0 +1,88 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main {
+    display: flex;
+    flex-direction:row-reverse;
+    flex-wrap: wrap;
+}
+.weather-cards {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    list-style-position: inside;
+    
+
+
+}
+#recent-searches {
+    flex-direction: column;
+    color:#fff;
+}
+#recent-searches li {
+    text-align: center;
+    font-size: larger;
+
+}
+#recent-searches button {
+    background-color: rgb(53, 52, 52);;
+    color:#fff;
+    border:none;
+    font-size: larger;
+    width:100%;
+    cursor: pointer;
+}
+#recent-searches button:hover {
+opacity: .7;
+}
+h1 {
+    text-align: center;
+    color:white;
+    background-color: rgb(53, 52, 52);
+    padding: 18px 0;
+}
+.container {
+    width:28%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#search-input {
+    width:100%;
+    height: 40px;
+    
+}
+#searchbtn {
+    width:100%;
+    height: 40px;
+    cursor:pointer;
+    border:none;
+    color:white;
+    background-color:  rgb(53, 52, 52);
+    font-size:larger;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.weather-data {
+    border: solid  1px  rgb(53, 52, 52);
+    width:70%;
+    margin:10px 11px 10px;
+    height:200px
+}
+.weather-cards{
+    width:99%;
+    /* margin: 10px; */
+}
+
+.weather-cards li {
+    margin: 10px;
+    color:white;
+    /* background-color: rgb(53, 52, 52); */
+    border-radius: 10px;
+    width: 153px;
+    height: 250px;
+    text-align: center;
+    padding-top: 10px;
+}
